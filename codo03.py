@@ -18,3 +18,4 @@ for i in range(put):
 print(f'입력 받은 정수의 합 : {total}')
 print(f'입력 받은 정수의 평균 : {total/2}')
 
+del put, total
