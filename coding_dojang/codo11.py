@@ -19,5 +19,7 @@ def spair(S):
     return dict[min(dict.keys())]
 
 
-S = [1, 3, 4, 8, 13, 17, 20]
+
+
+S = [1, 3, 4, 8, 13, 17, 20, 21]
 print(spair(S))

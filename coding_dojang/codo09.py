@@ -13,8 +13,8 @@ Ans ->  0:1개, 1:7개, 2:1개, 3:1개, 4:1개, 5:1개
 '''
 
 
-# n = str(list(range(1, 1001)))
-#
-# for i in range(10):
-#     print(f'{i} : {n.count(str(i))} 개')
+n = str(list(range(1, 1001)))
+
+for i in range(10):
+    print(f'{i} : {n.count(str(i))} 개')
 
