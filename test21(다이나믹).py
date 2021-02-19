@@ -7,3 +7,27 @@ def fibo(x):
     if x == 1 or x == 2:
         return 1
     return fibo(x - 1) + fibo(x - 2)
+
+
+
+# 메모이제이션 활용 (탑다운)
+d = [0] * 100  # 메모이제이션 하기 위해 리스트 초기화
+
+def fivo(a):
+    if a == 1 or a == 2:
+        return 1
+    if d[a] != 0:
+        return d[a]
+    d[a] = fivo(a - 1) + fivo(a - 2)
+    return d[a]
+print(fivo(99))
+
+# 바텀업
+d = [0] * 100  # 리스트 초기화
+d[1] = 1
+d[2] = 1
+n = 99
+
+for i in range(3, n + 1):
+    d[i] = d[i - 1] + d[i - 2]
+print(d[n])
